@@ -58,3 +58,50 @@ def distance_from_zero(cheese):
 cheese = max(4,5,6,7)
 print distance_from_zero(cheese)
 
+# USING/ABUSING DICTIONARIES/LISTS/INDEXES (prints c)
+my_dict = {
+    "fish": ["c", "a", "r", "p"],
+    "cash": -4483,
+    "luck": "good"
+}
+print my_dict["fish"][0]
+
+# Keys, lists, etc
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], 
+    'pocket' : ['seashell', 'strange berry', 'lint'],
+    'backpack' : ['xylophone', 'dagger', 'bedroll', 'bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort() 
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+inventory['gold'] += 50
+# Your code here
+print inventory
+
+# CALCULATING HEIGHT IN METERS, CENTIMETERS
+print "Tell me your height. Feet first, then inches."
+height_feet = float(raw_input("Feet:"))
+inches = float(raw_input("Inches:"))
+
+feet_to_inches = height_feet * 12
+total_inches = feet_to_inches + inches
+cm = total_inches * 2.54
+
+print cm
+cm = str(cm)
+print len(cm)
+meters = cm[0]
+cm_ = cm[1:]
+if meters == "1":
+    print "Your height is %s meter, %s centimeters." % (meters, cm_) 
+elif len(cm) == 5:
+    print "Your height is %s centimeters." % (cm)
+else:
+    print "Your height is %s meters, %s centimeters." % (meters, cm_) 
