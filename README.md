@@ -135,7 +135,6 @@ tyler = {
     "tests": [100.0, 100.0]
 }
 
-# Add your function below!
 def average(nums):
     total = sum(nums)
     total = float(total)
@@ -175,6 +174,14 @@ students = [lloyd, alice, tyler]
 print get_class_average(students)
 print get_letter_grade(get_class_average(students))
     
-    
+# List/for loop examples
+def count_small(numbers):
+    total = 0
+    for n in numbers:
+        if n < 10:
+            total = total + 1
+    return total
 
-
+lost = [4, 8, 15, 16, 23, 42]
+small = count_small(lost)
+print small
