@@ -185,3 +185,14 @@ def count_small(numbers):
 lost = [4, 8, 15, 16, 23, 42]
 small = count_small(lost)
 print small
+
+
+# Iterating over a list in a function:
+
+n = [3, 5, 7]
+
+def total(numbers):
+    result = 0
+    for x in numbers:
+        result += x
+    return result
