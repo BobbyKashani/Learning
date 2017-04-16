@@ -197,7 +197,7 @@ def total(numbers):
         result += x
     return result
 
-#Random number generator
+# Random number generator
 from random import randint
 random_number = randint(1, 10)
 guesses_left = 3
@@ -213,8 +213,9 @@ else:
     print "You lose."
     print "The number was %s" % (random_number)
 
-#Looping over a list 
+# Looping over a list 
 d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
 for key in d:
     print key, d[key]
     
+# Enumerating
