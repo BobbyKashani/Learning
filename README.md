@@ -212,3 +212,9 @@ while guesses_left > 0:
 else:
     print "You lose."
     print "The number was %s" % (random_number)
+
+#Looping over a list 
+d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+for key in d:
+    print key, d[key]
+    
