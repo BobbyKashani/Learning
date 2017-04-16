@@ -196,3 +196,19 @@ def total(numbers):
     for x in numbers:
         result += x
     return result
+
+#Random number generator
+from random import randint
+random_number = randint(1, 10)
+guesses_left = 3
+while guesses_left > 0:
+    guess = int(raw_input("Guess a # 1-9: "))
+    if guess == random_number:
+        print 'You win!'
+        break
+    else:
+        print "Try again:"
+        guesses_left -= 1  
+else:
+    print "You lose."
+    print "The number was %s" % (random_number)
