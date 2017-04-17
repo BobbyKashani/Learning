@@ -217,5 +217,16 @@ else:
 d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
 for key in d:
     print key, d[key]
+
+# Really cool summation function
+
+def digit_sum(x):
+    total = 0
+    while x > 0:
+        total = total + ( x % 10)
+        x = x // 10
+    print total
+    return total
     
-# Enumerating
+digit_sum(int(raw_input("enter number here: ")))
+
