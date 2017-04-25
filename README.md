@@ -230,3 +230,39 @@ def digit_sum(x):
     
 digit_sum(int(raw_input("enter number here: ")))
 
+# Turtle basics
+import turtle
+
+def draw_square():
+    window = turtle.Screen()
+    window.bgcolor("purple")
+
+    brad = turtle.Turtle()
+    brad.shape('arrow')
+    brad.shapesize(2, 3, 4)
+    
+# Cool turtle stuff
+import turtle
+
+myPen = turtle.Turtle()
+myPen.speed(0)
+myPen.color("#FF0000")
+
+side=400
+myPen.goto(-200, -200)
+
+#Start Spiral
+for i in range (1,100):
+   myPen.forward(side)
+   myPen.left(90)
+   side=side-4
+   
+brad = turtle.Turtle()
+brad.speed(0)
+x = .01
+for i in range (1, 1000):
+    brad.forward(x)
+    brad.left(3)
+    
+    x = x + .01
+    
